@@ -18,7 +18,7 @@ import org.openqa.selenium.support.FindBy;
 		@FindBy(xpath="//*[@id=\"surveyModal~title\"]")
 		WebElement surveyElement;
 		
-		@FindBy(xpath="//img[@class=\"rc-CourseraLogo\"]")
+		@FindBy(xpath="(//img[@alt='Coursera'])[1]")
 		WebElement courseraLogo;
 		
 		@FindBy(xpath="//*[@id=\"rendered-content\"]/div/div[1]/div/div[2]/div[2]/div/button[1]")
@@ -50,7 +50,8 @@ import org.openqa.selenium.support.FindBy;
 		
 		//verify CourseraPage is displayed or not 
 		public String Verify_CourseraPage() throws IOException {
-			String get_title = courseraLogo.getAttribute("alt");screenShot("HomePage");
+			String get_title = courseraLogo.getAttribute("alt");
+			screenShot("HomePage");
 			System.out.println(get_title);
 			return get_title;
 		}

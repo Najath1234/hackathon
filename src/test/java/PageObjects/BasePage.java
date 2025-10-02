@@ -40,7 +40,7 @@ public class BasePage {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		File trg = new File("C:\\Users\\2303456\\eclipse-workspace\\MyHackathon\\MyHackathon\\Screenshots\\" + ss + ".png");
+		File trg = new File(System.getProperty("user.dir")+"\\ExtentReportScreenshots\\"+ "_" + ss + ".png");
 
 		FileUtils.copyFile(src, trg);
 	}
