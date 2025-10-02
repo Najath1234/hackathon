@@ -11,10 +11,19 @@
       <class name="testCases.TC_04FormFilling">
         <methods>
           <include name="teardown"/>
+          <include name="messageDisplay"/>
           <include name="startfillingform"/>
           <include name="setup"/>
+          <include name="form"/>
         </methods>
       </class> <!-- testCases.TC_04FormFilling -->
+      <class name="testCases.TC_01CourseraPage">
+        <methods>
+          <include name="teardown"/>
+          <include name="TitleVerification"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC_01CourseraPage -->
     </classes>
   </test> <!-- Main(failed) -->
 </suite> <!-- Failed suite [Suite] -->

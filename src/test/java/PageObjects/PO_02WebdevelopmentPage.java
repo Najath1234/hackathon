@@ -20,7 +20,7 @@ public class PO_02WebdevelopmentPage extends BasePage{
 		super(driver);
 	}
 	
-	String filepath= "C:\\Users\\2303456\\eclipse-workspace\\MyHackathon\\MyHackathon\\testdata\\Book.xlsx";
+	String filepath= System.getProperty("user.dir")+"\\testdata\\Book.xlsx";
 	//locators
 	@FindBy(xpath="//input[@role=\"textbox\"]")
 	WebElement TakeInput;

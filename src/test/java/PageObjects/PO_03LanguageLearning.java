@@ -26,8 +26,7 @@ public class PO_03LanguageLearning extends BasePage {
 	
 	
 	
-	String filepath= "C:\\Users\\2303456\\eclipse-workspace\\MyHackathon\\MyHackathon\\testdata\\Book.xlsx";
-
+	String filepath= System.getProperty("user.dir")+"\\testdata\\Book.xlsx";
 	//locators
 	@FindBy(xpath="//input[@placeholder=\"What do you want to learn?\"]")
 	WebElement inputBox;
